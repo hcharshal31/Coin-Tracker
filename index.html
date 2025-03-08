@@ -4,10 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css" />
-    <title>Document</title>
+    <title>Coin Tracker</title>
 </head>
 <body>
-    
+    <div id="main">
+        <div id="search-section">
+            <input type="text" id="search" placeholder="Search by coin name">
+            <button id="mrkt-cap">Sort By Market Cap</button>
+            <button id="percentage">Sort By Percentage</button>
+        </div>
+
+        <table id="coins-table">
+            <thead>
+                <tr>
+                    <th id="th1">Coin</th>
+                    <th>Symbol</th>
+                    <th>Current Price</th>
+                    <th>Market Cap</th>
+                    <th>Percentage</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                
+            </tbody>
+        </table>
+       
+    </div>
     <script src="./script.js"></script>
 </body>
 </html>
