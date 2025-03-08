@@ -48,7 +48,7 @@ document.getElementById("mrkt-cap").addEventListener("click", (ev)=>{
 
 
 //Sorting the table from highest percentage change to lowest percentage change.
-document.getElementById("percentage").addEventListener("click", (ev)=>{
+document.getElementById("percentage").addEventListener("change", (ev)=>{
     let sortedPer = [...mainData].sort((a, b) => b.price_change_24h - a.price_change_24h);
 
     displayData(sortedPer);
